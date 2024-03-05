@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons</title>
+    <style>
+        /* Style for the grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+
+        /* Style for the grid items (images) */
+        .grid-item {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Style for images inside grid items */
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Grid items (images) -->
+        <div class="grid-item">
+            <img src="c:\Users\Beebe\OneDrive\Documents\WEB DEVELOPMENT WEEK 2\images\autumn tree nature.png" alt="A tree in autumn">
+        </div>
+        <div class="grid-item">
+            <img src="c:\Users\Beebe\OneDrive\Documents\WEB DEVELOPMENT WEEK 2\images\spring nature.jpeg" alt="A tree in spring">
+        </div>
+        <div class="grid-item">
+            <img src="c:\Users\Beebe\OneDrive\Documents\WEB DEVELOPMENT WEEK 2\images\winter nature.jpeg" alt="A tree is winter">
+        </div>
+        <!-- Add more grid items as needed -->
+        <div class="grid-item">
+            <img src="c:\Users\Beebe\OneDrive\Documents\WEB DEVELOPMENT WEEK 2\images\nature 2.jpg" alt="A tree in summer"
+        </div>
+    </div>
+</body>
+</html>
+<!-- Here is the break down of the code-->
+<!--Each image is placed within a <div> element with the class grid-item.-->
+<!--CSS is used to style the grid container and the grid items.
+ The .grid-container class sets up a CSS grid layout with columns that automatically adjust based on the available space.
+ The .grid-item class sets the width of each grid item to 100% and specifies that images within grid items should cover the entire space without distortion.
+You can add more grid items by duplicating the <div class="grid-item">...</div> section and adjusting the src attribute of the <img> tag to point to your desired images.-->
